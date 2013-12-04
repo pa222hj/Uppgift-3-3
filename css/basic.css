@@ -1,1 +1,42 @@
 /* Denna fil får du editera för att lösa uppgiften. Du får INTE ändra i html-filen. */
+
+/*Layout*/
+
+#container {
+   overflow: auto;
+   width: 600px;
+   margin: 0 auto;
+}
+#topbar {
+    height: 250px;
+}
+#menu ul {
+    float: left; 
+    margin: 0; 
+    padding: 0;
+}
+#menu li {
+    float: left; 
+    display: inline; 
+    margin-right: 10px; 
+}
+#content {
+    width: 600px;
+}
+#maincontent {
+    width: 300px;
+    float: left;
+    margin-right: 50px;
+}
+#maincontent img {
+    float: left;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+#subcontent {
+    width: 200px;
+    float: left;
+}
+#bottomcontent {
+    clear: both;
+}
