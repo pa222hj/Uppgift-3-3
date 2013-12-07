@@ -2,6 +2,9 @@
 
 /*Layout*/
 
+#menu a {
+    display: none;
+}
 #container {
    overflow: auto;
    width: 650px;
@@ -11,14 +14,14 @@
     height: 250px;
 }
 #menu ul {
-    float: left; 
+    float: left;
+    width: 650px;
     margin: 0; 
     padding: 0;
 }
 #menu li {
-    float: left; 
-    display: inline; 
-    margin-right: 10px; 
+    float: left;
+    display: inline;
 }
 #content {
     width: 650px;
@@ -32,14 +35,18 @@
 #maincontent img {
     float: left;
     margin-right: 5px;
-    margin-bottom: 5px;
 }
 #subcontent {
     width: 240px;
     float: left;
+    margin-top: 15px;
+    padding-left: 10px;
+    border-left: 1px dashed #797066;
 }
 #bottomcontent {
     clear: both;
+    padding-left: 10px;
+    padding-bottom: 10px;
 }
 
 /*Colors
@@ -60,7 +67,7 @@ subcontent text: 51473d
     background-color: #51473d;
 }
 #menu {
-    background-color: #888274;
+    background-color: #51473d;
 }
 #content {
     background-color: #eae7d2;
@@ -71,38 +78,73 @@ subcontent text: 51473d
 #container { 
     font-family: verdana, sans-serif;
 }
+h1, h2 {
+    font-family: times, serif;
+    font-weight: normal;
+}
 #topbar {
     font-size: 10px;
     color: #cfd8ce;
 }
-#menu {
-    font-size: 15px;
-}
 #menu ul {
+    background-color: #51473d;
 }
-#navigation li {
-    list-style-type: none;
+#menu li:first-child {
+    margin-left: 15px;
 }
-#navigation li a {
+#menu li {
     display: block;
-    padding: 10px;
-    background-color: #;
+    text-decoration: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 1px;
+    background-color: #797066;
+}
+#menu li:hover {
+    background-color: #9c9084;
+    color: #f0f0f0;
+}
+#menu li.active {
+    background-color: #eae7d2;
+}
+#menu li.active a {
+    color: #7a6e60;
+}
+#menu li a {
+    display: block;
+    font-size: 14px;
     color: #eae7d2;
-}
-#navigation li a:hover {
-    color: #BBB4E8;
-    background-color: #FEFEFE;
-}
-#navigation li a.active {
-    color: black;
+    text-decoration: none;
+    text-transform: capitalize;
 }
 #maincontent {
     font-size: 13px;
     color: #7a6e60;
+    line-height: 22px;
+}
+#maincontent h1 {
+    font-size: 32px;
 }
 #subcontent {
     font-size: 10px;
-    color: #51473d;
+    color: #797066;
+    line-height: 22px;
+}
+#subcontent h1 {
+    font-size: 18px;
+}
+#subcontent h2 {
+    margin-bottom: -15px;
+}
+#subcontent ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 13px;
+}
+#subcontent li a{
+     color: #51473d;
 }
 #bottomcontent {
     font-size: 10px;
