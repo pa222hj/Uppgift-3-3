@@ -7,15 +7,19 @@
 }
 #container {
    overflow: auto;
-   width: 650px;
+   width: 600px;
    margin: 0 auto;
+   border: 1px solid #cecab9;
 }
 #topbar {
-    height: 250px;
+    height: 225px;
+    background-image: url("pics/coffey.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 20px;
 }
 #menu ul {
     float: left;
-    width: 650px;
+    width: 600px;
     margin: 0; 
     padding: 0;
 }
@@ -24,10 +28,10 @@
     display: inline;
 }
 #content {
-    width: 650px;
+    width: 600px;
 }
 #maincontent {
-    width: 350px;
+    width: 330px;
     float: left;
     margin-right: 20px;
     padding-left: 10px;
@@ -37,11 +41,11 @@
     margin-right: 5px;
 }
 #subcontent {
-    width: 240px;
+    width: 220px;
     float: left;
     margin-top: 15px;
     padding-left: 10px;
-    border-left: 1px dashed #797066;
+    border-left: 1px dashed #c0c0c0;
 }
 #bottomcontent {
     clear: both;
@@ -49,16 +53,7 @@
     padding-bottom: 10px;
 }
 
-/*Colors
-container: f0f0f0
-topbar: 51473d
-menu: 888274
-content: eae7d2
-topbar/menu text: cfd8ce
-maincontent text: 7a6e60
-subcontent text: 51473d
-*/
-
+/*Colors*/
 
 #container {
     background-color: #f0f0f0;
@@ -84,10 +79,14 @@ h1, h2 {
 }
 #topbar {
     font-size: 10px;
-    color: #cfd8ce;
+    color: #eae7d2;
+    font-style: italic;
+    padding: 2px;
+    text-align: right;
 }
 #menu ul {
     background-color: #51473d;
+    border-bottom: 1px solid #fff;
 }
 #menu li:first-child {
     margin-left: 15px;
@@ -108,6 +107,8 @@ h1, h2 {
 }
 #menu li.active {
     background-color: #eae7d2;
+    border-bottom: 1px solid #eae7d2;
+    margin-bottom: -1px;   
 }
 #menu li.active a {
     color: #7a6e60;
@@ -120,7 +121,7 @@ h1, h2 {
     text-transform: capitalize;
 }
 #maincontent {
-    font-size: 13px;
+    font-size: 12px;
     color: #7a6e60;
     line-height: 22px;
 }
@@ -128,7 +129,7 @@ h1, h2 {
     font-size: 32px;
 }
 #subcontent {
-    font-size: 10px;
+    font-size: 9px;
     color: #797066;
     line-height: 22px;
 }
